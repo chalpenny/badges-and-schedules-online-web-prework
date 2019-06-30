@@ -16,4 +16,4 @@ end
 def assign_rooms(guest_list)
   room_assignments = []
   guest_list.each_with_index { |room| room_assignments << "Hello, #{guest_list}! You'll be assigned to room #{}!" }
-end 
+end
