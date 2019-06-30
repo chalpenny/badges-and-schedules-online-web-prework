@@ -14,6 +14,10 @@ end
   #an array of strings
 
 def assign_rooms(guest_list)
+  #each_with_index: keep track of each name provided and push the message to new array with the name and message 
   room_assignments = []
-  guest_list.each_with_index { |room| room_assignments << "Hello, #{guest_list}! You'll be assigned to room #{}!" }
+  guest_list.each_with_index { |name, index| room_assignments << "Hello, #{name}! You'll be assigned to room #{index+1}!" }
+  room_assignments
 end
+
+
