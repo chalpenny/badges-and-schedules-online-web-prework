@@ -19,3 +19,9 @@ def assign_rooms(guest_list)
   guest_list.each_with_index { |name, index| room_assignments << "Hello, #{name}! You'll be assigned to room #{index+1}!" }
   room_assignments
 end
+
+def printer(attendees)
+  #print the name of each index
+  puts batch_badge_creator(attendees).each
+  puts assign_rooms.each
+end
