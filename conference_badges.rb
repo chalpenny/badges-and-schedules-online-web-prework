@@ -22,6 +22,6 @@ end
 
 def printer(attendees)
   #print the name of each index
-  puts batch_badge_creator(attendees).each {|names| puts names}
-  puts assign_rooms(attendees).each {|room| puts room}
+  batch_badge_creator(attendees).each {|names| puts names}
+  assign_rooms(attendees).each {|room| puts room}
 end
