@@ -22,6 +22,6 @@ end
 
 def printer(attendees)
   #print the name of each index
-  puts batch_badge_creator(attendees).each
-  puts assign_rooms(attendees).each
+  puts batch_badge_creator(attendees).each_line
+  puts assign_rooms(attendees).each_line
 end
